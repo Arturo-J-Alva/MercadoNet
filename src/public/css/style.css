@@ -1,0 +1,49 @@
+body {
+    background: #f5f6f5;
+    font-family: 'Oswald', sans-serif;
+    overflow: auto;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+}
+
+.masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 16rem;
+    background: url("/img/productos1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0%;
+}
+
+@media(min-width:992px) {
+    .masthead h1 {
+        font-size: 5.5rem;
+    }
+}
+
+.fondo1 {
+    background: url("/img/supermercado3.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    ;
+}
+
+.fondo2 {
+    background: -webkit-linear-gradient(45deg, rgba(210, 255, 82, 1) 0%, rgba(235, 245, 223, 1) 100%);
+    background-repeat: repeat;
+}

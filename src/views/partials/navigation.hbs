@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand text-secondary" href="/allproducts">Listas de productos</a>
+{{#if empresa}}
+ <a class="navbar-brand text-secondary" href="/links">Tus productos</a>
+{{/if}}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+{{#if empresa}}
+<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Links
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/links">Todos tus productos</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/links/add">Agregar un producto</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a href="/profile" class="nav-link">Profile</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="/logout" class="nav-link">Cerrar Sesión</a>
+      </li>
+{{else}}
+<li class="nav-item">
+  <a href="/signin" class="nav-link">Iniciar Sesión</a>
+  </li>
+  <li class="nav-item">
+  <a href="/signup" class="nav-link">Registrarse</a>
+  </li>
+{{/if}}
+      
+
+      </ul>
+  </div>
+</nav>
+</div>
